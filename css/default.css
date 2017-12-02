@@ -1,0 +1,86 @@
+/*================= Reset CSS for cross-browser compatibility ==================*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+/*================= General Styles ==================*/
+/*Hyperlinks*/
+A:link { color:#002EB8 }
+A:active { color:#ff6633 }
+A:visited { color:#006633 }
+
+/*HTML tags*/
+body { background-color:#d6ffff; font-family:Comic sans MS }
+h1 { font-size:18pt; color:#ff0000; text-align:center }
+th { vertical-align:top }
+td { vertical-align:top }
+
+/*Individual styles*/
+.important_green { font-size:18pt; color:#00ff00 }
+.sorry  { font-size:25pt; color:#FFCC00; font-style:italic; font-weight:bold; text-align:center }
+.imagetable  { font-size:10pt; background-color:#d6ffff; border-style:none; width:auto; vertical-align:bottom }
+.watermark { color:#999999 }
+.mainbody { width:80%; margin:auto; background-color:#ffffff }
+.subtitle { text-decoration:underline; font-weight:bold }
+.thintable { border:thin solid; margin:auto; }
+.nomargin { margin:0 }
+.subtitle_nomargin { margin:0; text-decoration:underline; font-weight:bold }
+.pseudolink { color:#002EB8; text-decoration:underline; cursor:pointer }
+.bordernone { border:none }
+.borderthin { border:solid thin }
+.bgblack { background-color:black }
+.textred { color:#ff0000 }
+.textcenter { text-align:center }
+.hitcountertitle { margin:0; text-align:center; font-weight:bold; font-size:10pt}
+.hitcounter { margin:0; text-align:center; font-size:10pt }
+
+/*================= Menu Styles ==================*/
+
+/*HTML tags*/
+.menu ul { list-style:none; padding:0; text-align:center }
+.menu li { display:inline; position:relative; margin-right:5px }
+
+.menu ul li a { padding:0 10px 0 10px; background-color:#ffffff; text-decoration:none }
+.menu ul li a:hover { background-color:#ff0000 }
+
+/*Hide sub menu until necessary*/
+.menu ul li ul { display:none; padding:1px }
+.menu ul li ul li { float:left; clear:both }
+
+/*Show sub menu on hover*/
+.menu ul li:hover ul, .menu ul li a:hover ul {
+	display:block;
+	position:absolute;
+	margin:0;
+	left:-1px;       /* left-align our drop-down to the previous button border */
+	height:auto;      /* the drop-down height will be determiend by line count */
+	width:900px;
+	top:22px;
+}
